@@ -11,9 +11,15 @@
                         </div>
                     </a>
                     <div class="flex justify-center gap-2">
+                        @if($person->linkedin)
                         <a target="_blank" href="https://www.linkedin.com/in/{{ $person->linkedin }}"><img src="/images/icons/linkedin.svg" class="h-6 inline-block"></a>
+                        @endif
+                        @if($person->facebook)
                         <a target="_blank" href="https://www.facebook.com/{{ $person->facebook }}"><img src="/images/icons/facebook.svg" class="h-6 inline-block"></a>
+                        @endif
+                        @if($person->instagram)
                         <a target="_blank" href="https://www.instagram.com/{{ $person->instagram }}"><img src="/images/icons/instagram.svg" class="h-6 inline-block"></a>
+                        @endif
                     </div>
                 </div>                
             @endforeach

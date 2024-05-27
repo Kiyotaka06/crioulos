@@ -12,4 +12,9 @@ class PersonController extends Controller
         $people = Person::all();
         return view('people.index', compact('people'));
     }
+
+    public function create()
+    {
+        return view('people.create');
+    }
 }

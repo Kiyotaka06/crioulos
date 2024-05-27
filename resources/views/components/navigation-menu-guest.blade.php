@@ -9,7 +9,7 @@
         <div class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto">
             <ul class="navbar-menu flex flex-row items-center lg:gap-2">
                 <li>
-                    <x-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('welcome')">
+                    <x-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('welcome')" class="border-b-0">
                         <div>Início</div>
                     </x-nav-link>
                 </li>
@@ -19,7 +19,7 @@
                     </svg>
                 </li>
                 <li>
-                    <x-nav-link href="{{ route('language_codes.index') }}" :active="request()->routeIs('language_codes.index')">
+                    <x-nav-link href="{{ route('language_codes.index') }}" :active="request()->routeIs('language_codes.index')" class="border-b-0">
                         <div>Línguas</div>
                     </x-nav-link>
                 </li>
@@ -29,7 +29,7 @@
                     </svg>
                 </li>
                 <li>
-                    <x-nav-link href="{{ route('history.index') }}" :active="request()->routeIs('history.index')">
+                    <x-nav-link href="{{ route('history.index') }}" :active="request()->routeIs('history.index')" class="border-b-0">
                         <div>História</div>
                     </x-nav-link>
                 </li>
@@ -39,7 +39,7 @@
                     </svg>
                 </li>
                 <li>
-                    <x-nav-link href="{{ route('references.index') }}" :active="request()->routeIs('references.index')">
+                    <x-nav-link href="{{ route('references.index') }}" :active="request()->routeIs('references.index')" class="border-b-0">
                         <div>Referências</div>
                     </x-nav-link>
                 </li>
@@ -49,7 +49,7 @@
                     </svg>
                 </li>
                 <li>
-                    <x-nav-link href="{{ route('people.index') }}" :active="request()->routeIs('people.index')">
+                    <x-nav-link href="{{ route('people.index') }}" :active="request()->routeIs('people.index')" class="border-b-0">
                         <div>Pessoas</div>
                     </x-nav-link>
                 </li>
