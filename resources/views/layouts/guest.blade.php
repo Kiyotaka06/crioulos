@@ -17,7 +17,7 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body class="flex flex-col h-screen bg-gray-100 pt-16">
+    <body class="flex flex-col h-screen justify-between bg-gray-100 pt-20">
         <x-navigation-menu-guest/>
         <div class="mb-auto font-sans text-gray-900 antialiased">
             {{ $slot }}
