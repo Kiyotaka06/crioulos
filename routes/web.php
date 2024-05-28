@@ -37,18 +37,6 @@ Route::get('/creole-history/people/luis_romano', function () {
     return view('history.people.luis_romano');
 })->name('history-people-luis');
 
-// Unsplash
-Route::get('/unsplash', [UnsplashController::class, 'index'])->name('unsplash.index');
-
-// Lexicon
-Route::get('/lexicon/create', [LexiconController::class, 'create'])->name('lexicon.create');
-
-// Words
-Route::get('/words', function () {
-    $words = Word::with('languageCode')->paginate(100);
-    return view('words.index', compact(['words']));
-})->name('words');
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -57,5 +45,13 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    // Unsplash
+    Route::get('/unsplash', [UnsplashController::class, 'index'])->name('unsplash.index');
+    // Lexicon
+    Route::get('/lexicon/create', [LexiconController::class, 'create'])->name('lexicon.create');
+    // Words
+    Route::get('/words', function () {
+        $words = Word::with('languageCode')->paginate(100);
+        return view('words.index', compact(['words']));
+    })->name('words.index');
 });
-

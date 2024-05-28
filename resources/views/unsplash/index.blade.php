@@ -5,5 +5,6 @@
             <p class="text-center">Aqui pode encontrar uma imagem aleatória, onde pode escrever em baixo da mesma o que está representado.</p>
         </div>
         <livewire:unsplash-search />
+        <livewire:lexicon.insert-word />
     </x-container>
 </x-appLayout>

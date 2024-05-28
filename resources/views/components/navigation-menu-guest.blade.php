@@ -1,10 +1,10 @@
 <nav class="flex fixed w-full z-20 top-0 start-0 border-b shadow-sm bg-white">
-    <div class="max-w-screen-xl w-full flex flex-wrap items-center justify-between mx-auto p-3">
-        <a class="flex items-center gap-3" href="{{ route('welcome') }}">
+    <div class="max-w-screen-xl w-full flex flex-wrap items-center justify-between mx-auto px-4 lg:px-6 h-16">
+        <a class="flex items-center space-x-2" href="{{ route('welcome') }}">
             <x-application-mark/>
             <span class="self-center text-2xl text-amber-700 font-semibold whitespace-nowrap">Crioulos</span>
         </a>
-        <div class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto">
+        <div class="hidden lg:flex lg:mx-auto lg:items-center lg:w-auto">
             <ul class="navbar-menu flex flex-row items-center lg:gap-2">
                 <li>
                     <x-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('welcome')" class="border-b-0">
@@ -76,7 +76,7 @@
 <!-- Burger Menu -->
 <div class="navbar-menu relative z-50 hidden">
     <div class="navbar-backdrop fixed inset-0 bg-black opacity-50"></div>
-    <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+    <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm p-6 bg-white border-r overflow-y-auto">
         <div class="flex items-center mb-8">
             <a class="mr-auto text-3xl font-bold leading-none" href="{{ route('welcome') }}">
                 <svg class="h-12" alt="logo" viewBox="0 0 10240 10240">
@@ -93,27 +93,27 @@
             <ul>
                 <li class="mb-1">
                     <x-responsive-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('welcome')">
-                        <div>Início</div>
+                    {{ __('Início') }}
                     </x-responsive-nav-link>
                 </li>
                 <li class="mb-1">
                     <x-responsive-nav-link href="{{ route('language_codes.index') }}" :active="request()->routeIs('language_codes.index')">
-                        <div>Línguas</div>
+                    {{ __('Línguas') }}
                     </x-responsive-nav-link>
                 </li>
                 <li class="mb-1">
                     <x-responsive-nav-link href="{{ route('history.index') }}" :active="request()->routeIs('history.index')">
-                        <div>História</div>
+                    {{ __('História') }}
                     </x-responsive-nav-link>
                 </li>
                 <li class="mb-1">
                     <x-responsive-nav-link href="{{ route('references.index') }}" :active="request()->routeIs('references.index')">
-                        <div>Referências</div>
+                    {{ __('Referências') }}
                     </x-responsive-nav-link>
                 </li>
                 <li class="mb-1">
                     <x-responsive-nav-link href="{{ route('people.index') }}" :active="request()->routeIs('people.index')">
-                        <div>Pessoas</div>
+                    {{ __('Pessoas') }}
                     </x-responsive-nav-link>
                 </li>
             </ul>

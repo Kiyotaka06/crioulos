@@ -16,36 +16,24 @@
             <div class="w-full lg:w-6/12 px-4">
                 <div class="flex flex-wrap items-top mb-6">
                     <div class="w-full lg:w-4/12 px-4 ml-auto">
-                        <span class="block uppercase text-amber-700 text-sm font-semibold mb-2">Useful Links</span>
+                        <span class="block uppercase text-amber-700 text-sm font-semibold mb-2">Links Úteis</span>
                         <ul class="list-unstyled">
                             <li>
-                                <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free Products</a>
+                                <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm" href="#">Sobre Nós</a>
                             </li>
                         </ul>
                     </div>
                     <div class="w-full lg:w-4/12 px-4">
-                        <span class="block uppercase text-amber-700 text-sm font-semibold mb-2">Other Resources</span>
+                        <span class="block uppercase text-amber-700 text-sm font-semibold mb-2">Outros Recursos</span>
                         <ul class="list-unstyled">
                             <li>
-                                <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT License</a>
+                                <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm" href="#">Termos e Condições</a>
                             </li>
                             <li>
-                                <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+                                <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm" href="#">Política de Privacidade</a>
                             </li>
                             <li>
-                                <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                                <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm" href="#">Contacte-nos</a>
                             </li>
                         </ul>
                     </div>
