@@ -33,5 +33,13 @@ class PersonSeeder extends Seeder
             'instagram' => '_vieira_06',
             'description' => 'Estudante da Escola Secundária de Gondomar"'
         ]);
+
+        DB::table('people')->insert([
+            'name' => 'Pedro Pais',
+            'email' => 'rochinhas.pais@gmail.com',
+            'image' => 'pedro.jpg',
+            'instagram' => 'zlept_',
+            'description' => 'Estudante da Escola Secundária de Gondomar"'
+        ]);
     }
 }

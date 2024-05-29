@@ -1,10 +1,10 @@
 <x-form-section submit="updateProfileInformation">
     <x-slot name="title">
-        {{ __('Profile Information') }}
+        {{ __('Informação do Perfil') }}
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Update your account\'s profile information and email address.') }}
+        {{ __('Altera a informação e endereço eletrónico da sua conta.') }}
     </x-slot>
 
     <x-slot name="form">
@@ -39,12 +39,12 @@
                 </div>
 
                 <x-secondary-button class="mt-2 me-2" type="button" x-on:click.prevent="$refs.photo.click()">
-                    {{ __('Select A New Photo') }}
+                    {{ __('Selecione uma foto nova') }}
                 </x-secondary-button>
 
                 @if ($this->user->profile_photo_path)
                     <x-secondary-button type="button" class="mt-2" wire:click="deleteProfilePhoto">
-                        {{ __('Remove Photo') }}
+                        {{ __('Remover foto') }}
                     </x-secondary-button>
                 @endif
 
@@ -67,16 +67,16 @@
 
             @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::emailVerification()) && ! $this->user->hasVerifiedEmail())
                 <p class="text-sm mt-2 dark:text-white">
-                    {{ __('Your email address is unverified.') }}
+                    {{ __('O seu endereço eletrónico ainda não foi verificado.') }}
 
                     <button type="button" class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" wire:click.prevent="sendEmailVerification">
-                        {{ __('Click here to re-send the verification email.') }}
+                        {{ __('Clica aqui para re-enviar a verificação do endereço eletrónico.') }}
                     </button>
                 </p>
 
                 @if ($this->verificationLinkSent)
                     <p class="mt-2 font-medium text-sm text-green-600 dark:text-green-400">
-                        {{ __('A new verification link has been sent to your email address.') }}
+                        {{ __('Um novo link de verificação foi enviado para o seu endereço eletrónico.') }}
                     </p>
                 @endif
             @endif
@@ -85,11 +85,11 @@
 
     <x-slot name="actions">
         <x-action-message class="me-3" on="saved">
-            {{ __('Saved.') }}
+            {{ __('Guardado.') }}
         </x-action-message>
 
         <x-button wire:loading.attr="disabled" wire:target="photo">
-            {{ __('Save') }}
+            {{ __('Guardar') }}
         </x-button>
     </x-slot>
 </x-form-section>

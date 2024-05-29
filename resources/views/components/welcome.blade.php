@@ -6,10 +6,7 @@
         </h1>
     </div>
     <p class="mt-6 text-gray-500 leading-relaxed">
-        Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed
-        to help you build your application using a development environment that is simple, powerful, and enjoyable. We believe
-        you should love expressing your creativity through programming, so we have spent time carefully crafting the Laravel
-        ecosystem to be a breath of fresh air. We hope you love it.
+        Agora podes disfrutar de mais funcionalidades, por fazeres parte da nossa comunidade, tais como, inserir palavras, ver as palavras adicionadas e utilizar a nossa ferramenta "Unsplash".
     </p>
 </x-card>
 
@@ -23,7 +20,7 @@
         </div>
 
         <p class="mt-4 text-gray-500 text-sm leading-relaxed">
-            Laravel has wonderful documentation covering every aspect of the framework. Whether you're new to the framework or have previous experience, we recommend reading all of the documentation from beginning to end.
+            Aqui podes inserir palavras que vão povoar a base de dados deste projeto para aumentar, consequentemente, o número de traduções possíveis.
         </p>
     </div>
 
@@ -36,7 +33,7 @@
         </div>
 
         <p class="mt-4 text-gray-500 text-sm leading-relaxed">
-            Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
+            Aqui podes visualizar todas as palavras que já foram adicionadas anteriormente e as suas respetivas linguagens (desde: Portugês, Crioulo-Bissau-Guineense, Papiamento ...)
         </p>
     </div>
 </div>
