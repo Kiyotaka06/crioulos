@@ -1,5 +1,5 @@
 <div class="space-y-4">
-    <h1 class="pb-4 font-bold text-center text-4xl sm:text-5xl">Diferentes conceitos de crioulos</h1>
+    <h1 class="pb-4 font-bold text-center text-4xl sm:text-5xl">Diferentes tipos de crioulos</h1>
     <x-card>
         <div class="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-6">
             <div class="w-full space-y-2 order-1">

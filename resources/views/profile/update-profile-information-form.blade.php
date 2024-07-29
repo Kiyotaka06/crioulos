@@ -4,7 +4,7 @@
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Altera a informação e endereço eletrónico da sua conta.') }}
+        {{ __('Altualiza a informação e o endereço eletrónico da tua conta.') }}
     </x-slot>
 
     <x-slot name="form">
@@ -24,11 +24,11 @@
                                     reader.readAsDataURL($refs.photo.files[0]);
                             " />
 
-                <x-label for="photo" value="{{ __('Photo') }}" />
+                <x-label for="photo" class="hidden" value="{{ __('Foto') }}" />
 
                 <!-- Current Profile Photo -->
-                <div class="mt-2" x-show="! photoPreview">
-                    <img src="{{ $this->user->profile_photo_url }}" alt="{{ $this->user->name }}" class="rounded-full h-20 w-20 object-cover">
+                <div class="mt-0" x-show="! photoPreview">
+                    <img x-on:click.prevent="$refs.photo.click()" src="{{ $this->user->profile_photo_url }}" alt="{{ $this->user->name }}" class="rounded-full h-20 w-20 hover:cursor-pointer object-cover">
                 </div>
 
                 <!-- New Profile Photo Preview -->
@@ -37,10 +37,6 @@
                           x-bind:style="'background-image: url(\'' + photoPreview + '\');'">
                     </span>
                 </div>
-
-                <x-secondary-button class="mt-2 me-2" type="button" x-on:click.prevent="$refs.photo.click()">
-                    {{ __('Selecione uma foto nova') }}
-                </x-secondary-button>
 
                 @if ($this->user->profile_photo_path)
                     <x-secondary-button type="button" class="mt-2" wire:click="deleteProfilePhoto">
@@ -54,7 +50,7 @@
 
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
-            <x-label for="name" value="{{ __('Name') }}" />
+            <x-label for="name" value="{{ __('Nome') }}" />
             <x-input id="name" type="text" class="mt-1 block w-full" wire:model="state.name" required autocomplete="name" />
             <x-input-error for="name" class="mt-2" />
         </div>
@@ -67,7 +63,7 @@
 
             @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::emailVerification()) && ! $this->user->hasVerifiedEmail())
                 <p class="text-sm mt-2 dark:text-white">
-                    {{ __('O seu endereço eletrónico ainda não foi verificado.') }}
+                    {{ __('O teu endereço eletrónico ainda não foi verificado.') }}
 
                     <button type="button" class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" wire:click.prevent="sendEmailVerification">
                         {{ __('Clica aqui para re-enviar a verificação do endereço eletrónico.') }}
@@ -76,7 +72,7 @@
 
                 @if ($this->verificationLinkSent)
                     <p class="mt-2 font-medium text-sm text-green-600 dark:text-green-400">
-                        {{ __('Um novo link de verificação foi enviado para o seu endereço eletrónico.') }}
+                        {{ __('Um novo link de verificação foi enviado para o teu endereço eletrónico.') }}
                     </p>
                 @endif
             @endif
@@ -85,11 +81,11 @@
 
     <x-slot name="actions">
         <x-action-message class="me-3" on="saved">
-            {{ __('Guardado.') }}
+            {{ __('Atualizado.') }}
         </x-action-message>
 
         <x-button wire:loading.attr="disabled" wire:target="photo">
-            {{ __('Guardar') }}
+            {{ __('Atualizar') }}
         </x-button>
     </x-slot>
 </x-form-section>
